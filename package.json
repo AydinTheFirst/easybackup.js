@@ -1,0 +1,46 @@
+{
+  "name": "easybackup.js",
+  "version": "1.0.0",
+  "description": "A simple backup library for node.js",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "start": "",
+    "docs": "npm run build && typedoc src/index.ts --readme README.md",
+    "test": "npm run build && vitest",
+    "relase": "npm run build  && npm publish"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "@types/adm-zip": "^0.5.5",
+    "@types/mysql": "^2.15.25",
+    "@types/node": "^20.10.6",
+    "tsup": "^8.0.1",
+    "typedoc": "^0.25.6",
+    "vitest": "^1.1.1"
+  },
+  "author": "https://github.com/AydinTheFirst",
+  "homepage": "https://github.com/AydinTheFirst",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AydinTheFirst/npm-template"
+  },
+  "bugs": {
+    "url": "https://github.com/AydinTheFirst/npm-template"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.10",
+    "mariadb": "^3.2.3",
+    "mongodb": "^6.3.0",
+    "mysql": "^2.18.1",
+    "postgres": "^3.4.3"
+  }
+}
